@@ -1,4 +1,3 @@
-/* Checks numbers for repeated digits */
 #include <stdbool.h>
 #include <stdio.h> 
 
