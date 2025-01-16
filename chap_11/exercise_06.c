@@ -1,4 +1,3 @@
-/* Finds the largest and smallest elements in an array */
 #include <stdio.h>
 #define N 10
 
