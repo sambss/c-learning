@@ -1,14 +1,13 @@
 /* arraypass.c--Passing an array to a function. */
 
  #include <stdio.h>
-
  #define MAX 10
 
-int array[MAX], count;
 int largest(int num_array[], int length);
 
 int main(void)
 {
+    int array[MAX], count;
     /* Input MAX values from the keyboard. */
 
     for (count = 0; count < MAX; count++)
