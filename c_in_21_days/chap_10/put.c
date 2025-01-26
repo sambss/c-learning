@@ -10,6 +10,7 @@ int main( void )
     char *message4 = "programming";
     char *message5 = "language!!";
     char *strong = "Better, Faster, Harder, Stronger!";
+    char *string = "We can also print it using printf\n";
 
     puts(message1);
     puts(message2);
@@ -17,6 +18,7 @@ int main( void )
     puts(message4);
     puts(message5);
     puts(strong);
-    
+    printf("%s", string);
+
     return 0;
 }
