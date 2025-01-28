@@ -3,6 +3,7 @@
 
 void copy_array(char a[], char b[], int n);
 void find_larger_string(char a[], char b[], int size_a, int size_b);
+char* concat_strings(char a[], char b[], int size_a, int size_b);
 
 int main(void)
 {
@@ -37,6 +38,14 @@ int main(void)
     char *d = "Bigger String";
     find_larger_string(c, d, sizeof(c), sizeof(d));
 
+
+    char *e = "Hello ";
+    char *f = "World";
+    char *g;
+    g = concat_strings(e, f, sizeof(e) - 1, sizeof(f) - 1);
+    printf("%s\n", g);
+    free(g);
+
     return 0;
 }
 
@@ -62,4 +71,26 @@ void find_larger_string(char a[], char b[], int size_a, int size_b)
         printf("Bigger: %s\n", b);
     }
 
+}
+
+char* concat_strings(char a[], char b[], int size_a, int size_b)
+{
+    char* str_ptr;
+    int i = 0, j = 0;
+    str_ptr = malloc(size_a + size_b + 1);
+
+    while(a[i] != '\0')
+    {
+        *(str_ptr + i) = a[i];
+        i++;
+    }
+    while(b[j] != '\0')
+    {
+        *(str_ptr + i + j) = b[j];
+        j++;
+    }
+
+    *(str_ptr + i + j) = '\0';
+    
+    return str_ptr;
 }
