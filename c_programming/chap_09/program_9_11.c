@@ -21,8 +21,8 @@ int strToInt (const char string[])
     
     for ( i = 0; string[i] >= '0' && string[i] <= '9'; ++i)
     {
-    intValue = string[i] - '0';
-    result = result * 10 + intValue;
+        intValue = string[i] - '0';
+        result = result * 10 + intValue;
     }
 
     return result;
