@@ -7,7 +7,7 @@ int countWords (const char string[]);
 int main (void)
 {
     const char text1[] = "Well, here goes.";
-    const char text2[] = "And here we go... again.";
+    const char text2[] = "And here we go... again-and-again.";
 
     int countWords (const char string[]);
 
